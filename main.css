@@ -19,6 +19,56 @@ body{
     overflow-x: hidden;
 }
 
+/*NAVBAR*/
+.navb{
+    width: 100%;
+    position: fixed;
+    padding: 0.5vw 2vw;
+    top: 0;
+    z-index: 9999;
+    transition: 0.4s;
+    align-content: center;
+}
+
+.navb{
+	padding-left: 28vw;
+}
+
+.navb a{
+    display: block;
+    color: #fff;
+    float: left;
+	font-size: 1.5vw;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.2vw 1.5vw;
+	text-decoration: none;
+    position: relative;
+    transition: 0.4s;
+    z-index: 9999;
+}
+
+.navb a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--three);
+    height: 2px;
+    transition: all 0.6s;
+}
+
+.navb a:hover{
+    color: var(--three);
+}
+
+.navb a:hover::after {
+    width: 100%;
+}
+
 /* HOME */
 .home {
     background-color: rgba(0, 0, 0, 0.4);
@@ -26,6 +76,7 @@ body{
     width: 100%;
     align-content: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .home::before{
@@ -47,6 +98,7 @@ body{
     height: 500px;
     width: 400px;
     margin-top: 8%;
+    z-index: 3;
 }
 
 .home h1{
@@ -70,54 +122,11 @@ body{
       blinker 0.75s step-end infinite;
   }
 
-/*NAVBAR*/
-.navb{
-    background-color: transparent;
+/*ABOUT*/
+.abt{
     width: 100%;
-    position: fixed;
-    padding: 10px 50px;
-    top: 0;
-    z-index: 999;
-    transition: 0.4s;
-    align-content: center;
-}
-
-.navb{
-	padding-left: 400px;
-}
-
-.navb a{
-    display: block;
-    color: #fff;
-    float: left;
-	font-size: 25px;
-    font-family: 'Raleway', sans-serif;
-    padding: 5px 30px;
-	text-decoration: none;
-    position: relative;
-    transition: 0.4s;
-}
-
-.navb a::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: var(--three);
-    height: 2px;
-    transition: all 0.6s;
-}
-
-.navb a:hover{
-    color: var(--three);
-}
-
-.navb a:hover::after {
-    width: 100%;
+    background-color: var(--one);
+    height: 50%;
 }
 
 /*ANIMATIONS*/
