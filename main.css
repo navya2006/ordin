@@ -21,32 +21,54 @@ body{
 
 /* HOME */
 .home {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
     width: 100%;
+    align-content: center;
+    justify-content: center;
 }
 
-.home::before{
+/*.home::before{
     position: absolute;
     background-attachment: fixed;
-    background-image: url("images/bg2.jpg");
+    background-image: url("images/code.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
     content: "";
     height: 100%;
     width: 100%;
     z-index: -1;
+}*/
+
+.home .img{
+    height: 500px;
+    width: 400px;
+    margin-top: 8%;
 }
 
 .home h1{
-    font-size: 120px;
+    font-size: 8vw;
     font-family: 'Poiret One', cursive;
     color: var(--one);
     text-align: center;
-    padding-top: 23%;
-    text-shadow: 1px 1px 2px var(--two);
+    padding-top: 1%;
+    text-shadow: 2px 2px 3px var(--two);
 }
+
+/*TYPE WRITER*/
+.typewriter h1 {
+    overflow: hidden; 
+    border-right: 0.15em solid #fff; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 0.15em; 
+    animation: 
+      typing 5s steps(40, end),
+      blinker 0.75s step-end infinite;
+  }
 
 /*NAVBAR*/
 .navb{
@@ -97,3 +119,14 @@ body{
 .navb a:hover::after {
     width: 100%;
 }
+
+/*ANIMATIONS*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+@keyframes blinker {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+  }
