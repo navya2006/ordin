@@ -116,7 +116,7 @@ body{
     margin: 0 auto; 
     letter-spacing: 0.15em; 
     animation: 
-      typing 6s steps(40, end),
+      typing 5s steps(40, end),
       blinker 0.75s step-end infinite;
   }
 
