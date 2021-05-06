@@ -215,7 +215,8 @@ a:hover{
 }*/
 
 .abt{
-    padding-top: 250px;
+    margin-top: 150px;
+    padding-top: 80px;
 }
 
 .abt h2{
@@ -284,10 +285,11 @@ a:hover{
 .guide{
     width: 100%;
     padding-bottom: 50px;
-    padding-top: 60px;
+    margin-top: 150px;
+    padding-top: 50px;
 }
 
-.guide li{
+.guide p{
     font-size: 18px;
 	color:var(--two);
 	padding-left: 20px;
