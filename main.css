@@ -183,6 +183,72 @@ body{
 	background-color:var(--two);
 }
 
+.abt .line {
+	text-align: center;
+	width:50%;
+	border-color: #CFCFCF;
+	margin-top: 5vw;
+	margin-left:25%;
+}
+
+
+/*TEAM*/
+
+.team{
+	width: 100%;
+	padding-bottom: 70px;
+	text-align:center;
+	background-color:var(--one);
+}
+
+.team h1{
+	text-align:center;
+	font-size:10vh;
+	color:var(--two);
+	padding:2vh;
+	padding-bottom:0;
+	font-family: 'Poiret One', cursive;
+}
+
+.team .icon-large{
+    font-size: 8vw;
+	width:50%;
+    color: var(--three);
+	text-align:center;
+}
+
+.heads{
+	font-family:'Catamaran', sans-serif;
+	color:var(--five);
+	text-align:center;
+}
+
+.image {
+  display: block;
+  width:30vh;
+	height: 30vh;
+	border-radius:50%;
+	margin-bottom:2vw;
+	cursor: pointer;
+}
+
+.heads h3 {
+	font-size:1.7vw;
+}
+
+.heads h4 {
+	font-size:1.2vw;
+}
+
+.heads p{
+	font-size:1.2vw;
+}
+
+.heads .headhr {
+	text-align: center;
+	width:50%;
+	border-color: var(--five)
+}
 
 /*ANIMATIONS*/
 @keyframes typing {
