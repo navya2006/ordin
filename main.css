@@ -3,7 +3,8 @@
     --two: #ffffff;
     --three: #34C8EC;
 	--four: #1F22F5;
-	--five: #EDEEFA;
+    --five: #EDEEFA;
+    --six: #d6ae29;
 }
 
 *{
@@ -19,6 +20,14 @@ html{
 body{
     background-color: var(--one);
     overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 /*NAVBAR*/
@@ -69,11 +78,12 @@ body{
 /* HOME */
 .home {
     background-color: rgba(0, 0, 0, 0.4);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     align-content: center;
     justify-content: center;
     z-index: 1;
+    padding-bottom: 23%;
 }
 
 .home::before{
@@ -91,33 +101,31 @@ body{
 }
 
 .home .img{
-    height: 400px;
-    width: 300px;
-    margin-top: 5%;
+    height: 500px;
+    width: 400px;
+    margin-top: 8%;
     z-index: 3;
 }
 
+.home .space{
+    padding-top: 20%;
+}
+
 .home h1{
-    font-size: 10vw;
-    font-family: 'Catamaran', sans-serif;
+    font-size: 8vw;
+    font-family: 'Poiret One', cursive;
     color: var(--two);
     text-align: center;
-    padding-top: 20%;
-    text-shadow: 2px 2px 3px var(--three);
+    padding-top: 1%;
+    text-shadow: 3px 3px 4px var(--three);
 }
 
 /*TYPE WRITER*/
-
-.typewriter {
-	height:10vw;
-}
-
 .typewriter h1 {
     overflow: hidden; 
     border-right: 0.15em solid #fff; 
     white-space: nowrap; 
-	padding-top:20%;
-    margin: 0; 
+    margin: 0 auto; 
     letter-spacing: 0.15em; 
     animation: 
       typing 5s steps(40, end),
@@ -126,17 +134,20 @@ body{
 
 /*ABOUT*/
 .abt{
+    background-color: var(--one);
     width: 100%;
 	padding-bottom: 70px;
 	padding-top: 70px;
-	text-align:center;
+    text-align:center;
+    transition: 0.6s;
 }
 
 .abt h1{
 	text-align:center;
 	font-size:10vh;
 	color:var(--two);
-	padding:2vh;
+    padding:2vh;
+    padding-top: 50px;
 	padding-bottom:0;
 	font-family: 'Poiret One', cursive;
 }
@@ -180,7 +191,8 @@ body{
 .abt .bg {
 	padding:1vw;
 	border-radius:5px;
-	background-color:var(--two);
+    background-color:var(--two);
+    transition: 0.6s;
 }
 
 .abt .line {
@@ -191,12 +203,115 @@ body{
 	margin-left:25%;
 }
 
+.abt .bg:hover{
+    background-image: linear-gradient(to bottom right, #fff, #34C8EC);
+    transition: 0.6s;
+}
+
+/*GUIDELINES*/
+.guide{
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+
+.guide li{
+    font-size: 18px;
+	color:var(--two);
+	padding-left: 20px;
+	padding-right: 10px;
+	font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.guide h2{
+    text-align:center;
+	font-size:10vh;
+	color:var(--three);
+    padding:2vh;
+    padding-bottom: 50px;
+	font-family: 'Poiret One', cursive;
+}
+
+.guide .shade{
+    color: var(--six);
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.guide b{
+    text-shadow: #fff 0.5px 0.5px 1px;
+}
+
+.guide .light{
+    color: var(--four);
+}
+
+.guide .shade:hover{
+    opacity: 1;
+}
+
+.guide .box{
+    padding: 50px;
+    border: 2px #34C8EC solid;
+}
+
+/*EVENTS*/
+.event{
+    margin-top: 90px;
+    padding-bottom: 50px;
+}
+
+.event h2{
+    text-align:center;
+	font-size:10vh;
+	color:var(--two);
+    padding:2vh;
+    padding-bottom: 20px;
+	font-family: 'Poiret One', cursive;
+}
+
+.event .icon-large{
+    font-size: 120px;
+    color: var(--two);
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.event .icon-l{
+    font-size: 8vw;
+	width:50%;
+    color: var(--three);
+	text-align:center;
+}
+
+.event .box{
+    border: transparent;
+    margin-left: 40px;
+    margin-right: 30px;
+    font-size: 30px;
+	color:var(--two);
+	font-family: 'Poppins', sans-serif;
+    padding-top: 0px;
+}
+
+.event .row{
+    margin-top: 40px;
+}
+
+.event .line{
+	text-align: center;
+	width: 50%;
+	border-color: #CFCFCF;
+	margin-top: 5vw;
+	margin-left:25%;
+}
 
 /*TEAM*/
-
 .team{
 	width: 100%;
-	padding-bottom: 70px;
+    padding-bottom: 70px;
 	text-align:center;
 	background-color:var(--one);
 }
@@ -206,7 +321,8 @@ body{
 	font-size:10vh;
 	color:var(--two);
 	padding:2vh;
-	padding-bottom:0;
+    padding-bottom:0;
+    padding-top: 100px;
 	font-family: 'Poiret One', cursive;
 }
 
@@ -248,6 +364,49 @@ body{
 	text-align: center;
 	width:50%;
 	border-color: var(--five)
+}
+
+.team .row{
+    padding-top: 50px;
+}
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+	background-color: #111;
+	text-align: center;
+	padding-bottom:6vh;
+}
+
+
+.footer h1{
+	text-align: center;
+	color: var(--three);
+    font-family: 'Poiret One', cursive;
+    font-size: 75px;
+    letter-spacing: 0.5vw;
+    padding-top: 13vh;
+	text-decoration:none !important;
+}
+
+.footer h2{
+    color: #fff;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 30px;
+    padding-top: 0.5vw;
+    text-align: center;
+    letter-spacing: 0.4;
+	text-decoration:none !important;
+}
+
+.footer p{
+    color: #fff;
+    font-family: 'Hind Vadodara', sans-serif;
+    letter-spacing: 0.4;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0.3vw;
+	text-decoration:none !important;
 }
 
 /*ANIMATIONS*/
