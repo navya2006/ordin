@@ -140,7 +140,7 @@ a:hover{
   }
 
 /*ABOUT*/
-.abt{
+/*.abt{
     width: 100%;
 	padding-bottom: 70px;
 	padding-top: 130px;
@@ -212,6 +212,72 @@ a:hover{
 .abt .bg:hover{
     background-image: linear-gradient(to bottom right, #fff, #34C8EC);
     transition: 0.6s;
+}*/
+
+.abt{
+    padding-top: 250px;
+}
+
+.abt h2{
+    text-align:center;
+	font-size:50px;
+	color:var(--three);
+	margin-top:1vh;
+	padding-top:1vh;
+	padding-right:10px;
+	font-family: 'Poiret One', cursive;
+	margin-bottom:3vw;
+   }
+
+.abt p{
+    text-align:left;
+	font-size: 20px;
+	color:var(--two);
+	padding-left:5vh;
+	padding-right:4vh;
+	font-family: 'Catamaran', sans-serif;
+	margin-bottom:3.5vw;
+	padding-bottom:3.5vh;
+}
+
+.abt .img{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.abt .img2{
+    height: 300px;
+    width: 200px;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    margin-right: 10px;
+}
+
+.abt .module-border-wrap {
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #fff, #000);
+    padding: 3px;
+  }
+
+.abt .right{
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to left, #fff, #000);
+    padding: 3px;
+}
+  
+.abt .module {
+    background: #000;
+    color: white;
+    padding: 2rem;
+  }
+
+.abt .box{
+    border: 3px #fff solid;
 }
 
 /*GUIDELINES*/
