@@ -382,6 +382,94 @@ a:hover{
 	margin-left:25%;
 }
 
+/*events carousel*/
+
+.carousel {
+	height:auto;
+	display:block;
+	background-color:#2C1919;
+	margin:3vw;
+	margin-left:10%;
+	margin-right:10%;
+	border:1px solid var(--three);
+	border-radius:5px;
+}
+
+.carousel-caption {
+	top:0;
+	margin:none;
+	font-family: 'Catamaran', sans-serif;
+}
+
+.carousel-caption h5 {
+	font-size:3vw;
+}
+
+.carousel-caption p {
+	text-align:left;
+	font-size:1.3vw;
+	font-family: 'Catamaran', sans-serif;
+}
+
+.carousel-caption .icon-large {
+	font-size:3vw;
+	color:var(--two);
+	display:inline;
+	padding-right:1vw;
+}
+
+.carousel-control-prev {
+	background-color:transparent;
+	border:none;
+}
+
+.carousel-control-next {
+	background-color:transparent;
+	border:none;
+}
+
+.carousel-indicators button{
+	font-size:3vw;
+	margin:1vw;
+}
+
+.table{
+	font-family: 'Catamaran', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top:2vw;
+}
+
+.table td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--three);
+  color: white;
+}
+
+.table td {
+	color:#fff;
+	text-align: center;
+}
+
+ul .bullet{
+	text-align:left;
+	list-style-type:circle;
+	color:#fff;
+	font-family: 'Catamaran', sans-serif;
+	font-size:1.3vw;
+}
+
+li {
+	text-align:left;
+}
+
 /*TEAM*/
 .team{
 	width: 100%;
