@@ -339,9 +339,9 @@ a:hover{
 .event h2{
     text-align:center;
 	font-size:10vh;
-	color:var(--two);
+	color:var(--three);
     padding:2vh;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 	font-family: 'Poiret One', cursive;
 }
 
@@ -403,6 +403,8 @@ a:hover{
 
 .carousel-caption h5 {
 	font-size:3vw;
+    padding-top: 50px;
+    padding-bottom: 20px
 }
 
 .carousel-caption p {
